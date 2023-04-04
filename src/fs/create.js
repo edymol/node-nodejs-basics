@@ -1,8 +1,10 @@
+import * as fs from "fs/promises";
+
 const create = async () => {
   const fs = require('fs');
   const path = require('path');
 
-  const filePath = path.join(__dirname, 'files', 'fresh.txt');
+  const filePath = "src/fs/files";
 
   try {
     await fs.promises.access(filePath);
